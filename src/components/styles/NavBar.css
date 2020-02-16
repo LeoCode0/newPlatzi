@@ -1,0 +1,103 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    color: white;
+}
+
+.header--logo{
+    display: flex;
+}
+
+.header--logo a{
+    display: block;
+    height: 50px;
+}
+
+.header--logo__logo{
+    width: 30px;
+    margin-left: 10px;
+    background-image: url(../../images/logo.webp);
+    background-size: 25px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.header--logo__letras{
+    width: 55px;
+    background-image: url(../../images/logo_letras.webp);
+    background-size: 55px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.header--enlaces{
+    grid-column:  2 / 9;
+}
+
+.header--enlaces__lista{
+    height: 30px;
+    border-right: 1px solid white;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header--enlaces__lista li{
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header--enlaces__lista li a{
+    color: white;
+}
+
+.header--enlaces__lista li a:hover{
+    opacity: 0.8;
+}
+
+.header--usuario{
+    margin-left: 20px;
+    margin: auto 20px;
+    grid-column:  9 / 13;
+}
+
+.header--usuario__image{
+    margin:  -7px 15px;
+    border-radius: 50%;
+}
+
+.header--usuario__search{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 70px;
+    border-radius: 5px;
+    border: 1px solid ;
+    border-radius: 6px;
+    color: #606164;
+    height: 30px;
+    width: 180px;
+    right: 10px;
+    top: 10px;
+}
+
+.header--usuario__button{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    height: 31px;
+    background-color: #91c93c;
+    border: 0;
+    border-radius: 0 6px 6px 0;
+    color: white;
+}
